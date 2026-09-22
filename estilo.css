@@ -1,0 +1,380 @@
+/* =========================================================
+   SISTEMA DE PREVENCIÓN FRENTE A DESASTRES NATURALES 2.0
+   CSS propio + Bootstrap
+   ========================================================= */
+
+:root {
+    --naranja: #ff7a00;
+    --naranja-oscuro: #b74700;
+    --fondo: #fff7ed;
+    --oscuro: #17120e;
+    --oscuro-2: #241b15;
+    --blanco: #ffffff;
+    --gris: #6b625c;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--fondo);
+    color: #17120e;
+}
+
+/* NAVBAR */
+
+.navbar-custom {
+    background: #15100c;
+    border-bottom: 2px solid var(--naranja);
+}
+
+.navbar-brand {
+    letter-spacing: .3px;
+}
+
+.nav-link {
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: #ff9b45 !important;
+}
+
+/* PORTADA */
+
+.hero {
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(rgba(25, 12, 4, .72), rgba(25, 12, 4, .88)),
+        radial-gradient(circle at 20% 20%, #ff8a00, #35180a 55%, #100c09);
+    color: white;
+}
+
+.hero-box {
+    max-width: 850px;
+    padding: 55px 0;
+}
+
+.hero h1 {
+    font-size: clamp(2.4rem, 6vw, 5rem);
+    font-weight: 900;
+    line-height: 1.02;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    max-width: 750px;
+    color: #f5e8dd;
+}
+
+/* SECCIONES */
+
+.section-padding {
+    padding: 90px 0;
+}
+
+.section-dark {
+    background: var(--oscuro);
+    color: white;
+}
+
+.section-dark .section-description {
+    color: #d6cbc4;
+}
+
+.section-tag {
+    display: inline-block;
+    color: var(--naranja-oscuro);
+    font-size: .78rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.section-dark .section-tag {
+    color: #ff9b45;
+}
+
+h2 {
+    font-weight: 900;
+}
+
+.section-description {
+    max-width: 750px;
+    margin: 12px auto 0;
+    color: var(--gris);
+}
+
+/* TARJETAS */
+
+.info-card,
+.disaster-card,
+.dashboard-card,
+.kit-card,
+.emergency-card {
+    border-radius: 22px;
+    padding: 30px;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.info-card:hover,
+.disaster-card:hover,
+.dashboard-card:hover,
+.kit-card:hover,
+.emergency-card:hover {
+    transform: translateY(-7px);
+}
+
+.info-card {
+    background: white;
+    box-shadow: 0 15px 40px rgba(60, 35, 15, .09);
+    border: 1px solid #f0dfd1;
+}
+
+.icon-circle {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #fff0df;
+    color: var(--naranja-oscuro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.info-card h3,
+.disaster-card h3,
+.kit-card h3,
+.emergency-card h3 {
+    font-weight: 800;
+}
+
+.disaster-card {
+    background: #241913;
+    border: 1px solid #50301f;
+}
+
+.disaster-card:hover {
+    box-shadow: 0 15px 45px rgba(255, 122, 0, .12);
+}
+
+.disaster-icon {
+    font-size: 42px;
+    color: #ff9b45;
+    margin-bottom: 20px;
+}
+
+.disaster-card p {
+    color: #d7cbc3;
+}
+
+.dashboard-card {
+    background: white;
+    box-shadow: 0 15px 40px rgba(60, 35, 15, .08);
+    border: 1px solid #f0dfd1;
+}
+
+.mini-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: #fff0df;
+    color: var(--naranja-oscuro);
+    font-size: 21px;
+}
+
+.clima-result {
+    padding: 25px;
+    border-radius: 15px;
+    background: #fff7ed;
+    min-height: 110px;
+    display: flex;
+    align-items: center;
+}
+
+/* RIESGO */
+
+.risk-box {
+    max-width: 800px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 25px;
+    background: #241913;
+    border: 1px solid #50301f;
+}
+
+.question {
+    margin-bottom: 22px;
+}
+
+.question label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.question label i {
+    color: #ff9b45;
+    width: 25px;
+}
+
+.risk-result {
+    padding: 20px;
+    border-radius: 15px;
+    background: #38271d;
+    text-align: center;
+    font-weight: 800;
+    min-height: 60px;
+}
+
+.semaforo {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.luz {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #392c24;
+    border: 2px solid #665043;
+    transition: .25s;
+}
+
+.luz.activa-verde {
+    background: #2ecc71;
+    box-shadow: 0 0 20px #2ecc71;
+}
+
+.luz.activa-amarilla {
+    background: #f1c40f;
+    box-shadow: 0 0 20px #f1c40f;
+}
+
+.luz.activa-roja {
+    background: #e74c3c;
+    box-shadow: 0 0 20px #e74c3c;
+}
+
+.luz.activa-negra {
+    background: #000;
+    box-shadow: 0 0 20px #777;
+}
+
+/* KIT */
+
+.kit-card {
+    background: white;
+    border: 1px solid #f0dfd1;
+    box-shadow: 0 12px 35px rgba(60, 35, 15, .07);
+}
+
+.kit-card i {
+    font-size: 35px;
+    color: var(--naranja-oscuro);
+    margin-bottom: 18px;
+}
+
+/* EMERGENCIAS */
+
+.emergency-card {
+    text-align: center;
+    background: #241913;
+    border: 1px solid #50301f;
+}
+
+.emergency-card i {
+    font-size: 40px;
+    color: #ff9b45;
+    margin-bottom: 15px;
+}
+
+.emergency-card h3 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.emergency-card p {
+    color: #d7cbc3;
+}
+
+.official-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    background: #2d2018;
+    border: 1px solid #50301f;
+}
+
+.official-box > i {
+    font-size: 25px;
+    color: #ff9b45;
+}
+
+.official-box a {
+    color: #ffad69;
+    font-weight: bold;
+}
+
+/* OBJETIVO */
+
+.objective-box {
+    max-width: 850px;
+    margin: auto;
+    padding: 45px;
+    border-radius: 25px;
+    background: white;
+    border-left: 7px solid var(--naranja);
+    box-shadow: 0 15px 45px rgba(60, 35, 15, .08);
+}
+
+.objective-box p {
+    color: #514941;
+    line-height: 1.7;
+}
+
+/* FOOTER */
+
+footer {
+    background: #100c09;
+    color: #d8ccc4;
+    padding: 35px 0;
+}
+
+footer i {
+    color: #ff9b45;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .section-padding {
+        padding: 65px 0;
+    }
+
+    .hero {
+        min-height: 80vh;
+    }
+
+    .hero-box {
+        padding: 35px 0;
+    }
+
+    .risk-box,
+    .objective-box {
+        padding: 25px;
+    }
+}

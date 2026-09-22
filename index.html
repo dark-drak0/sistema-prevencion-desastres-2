@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistema de Prevención frente a Desastres Naturales 2.0</title>
+
+    <!-- Bootstrap: estructura, navbar, tarjetas, botones y diseño responsive -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome: iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+
+    <!-- Nuestro CSS -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fa-solid fa-shield-halved"></i> Prevención 2.0
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#desastres">Desastres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#riesgo">Riesgo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#emergencias">Emergencias</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- PORTADA -->
+    <header id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-box">
+                <span class="badge rounded-pill text-bg-warning mb-3">
+                    PROYECTO FERIA CIENTÍFICA
+                </span>
+
+                <h1>Sistema de Prevención frente a Desastres Naturales</h1>
+
+                <p class="lead">
+                    Una herramienta educativa para conocer los riesgos,
+                    consultar información y aprender cómo actuar antes,
+                    durante y después de una emergencia.
+                </p>
+
+                <a href="#sistema" class="btn btn-warning btn-lg fw-bold">
+                    <i class="fa-solid fa-arrow-down"></i> Explorar sistema
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- PRESENTACIÓN -->
+    <section id="sistema" class="section-padding">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <span class="section-tag">PREVENCIÓN</span>
+                <h2>¿Por qué es importante prepararse?</h2>
+                <p class="section-description">
+                    Los desastres naturales pueden ocurrir sin previo aviso.
+                    Tener información y conocer las medidas de seguridad
+                    permite reaccionar de mejor manera ante una emergencia.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="info-card h-100">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+                        <h3>Identificar</h3>
+                        <p>
+                            Reconoce los principales peligros que pueden
+                            afectar a una comunidad.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="info-card h-100">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-list-check"></i>
+                        </div>
+                        <h3>Prepararse</h3>
+                        <p>
+                            Conoce medidas de prevención y prepara elementos
+                            importantes para una emergencia.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="info-card h-100">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-person-running"></i>
+                        </div>
+                        <h3>Actuar</h3>
+                        <p>
+                            Aprende qué hacer para disminuir los riesgos
+                            durante una situación de emergencia.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- DESASTRES -->
+    <section id="desastres" class="section-padding section-dark">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <span class="section-tag">AMENAZAS</span>
+                <h2>Principales desastres naturales</h2>
+                <p class="section-description">
+                    Selecciona una tarjeta para conocer recomendaciones básicas.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="disaster-card h-100">
+                        <i class="fa-solid fa-house-crack disaster-icon"></i>
+                        <h3>Terremoto</h3>
+                        <p>
+                            Mantén la calma, aléjate de ventanas y busca
+                            un lugar seguro.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="disaster-card h-100">
+                        <i class="fa-solid fa-water disaster-icon"></i>
+                        <h3>Tsunami</h3>
+                        <p>
+                            Si estás cerca del mar y ocurre un terremoto fuerte,
+                            aléjate hacia zonas altas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="disaster-card h-100">
+                        <i class="fa-solid fa-fire disaster-icon"></i>
+                        <h3>Incendio forestal</h3>
+                        <p>
+                            Aléjate del fuego y sigue las instrucciones
+                            de las autoridades.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="disaster-card h-100">
+                        <i class="fa-solid fa-cloud-bolt disaster-icon"></i>
+                        <h3>Tormenta</h3>
+                        <p>
+                            Permanece bajo techo y evita zonas abiertas
+                            durante actividad eléctrica.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- INFORMACIÓN ACTUAL -->
+    <section class="section-padding">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <span class="section-tag">INFORMACIÓN</span>
+                <h2>Condiciones actuales</h2>
+                <p class="section-description">
+                    La siguiente información utiliza datos meteorológicos
+                    públicos para mostrar una referencia del clima.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-6">
+                    <div class="dashboard-card h-100">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="mini-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h3 class="mb-0">Ubicación de referencia</h3>
+                                <small>Chillán, Ñuble</small>
+                            </div>
+                        </div>
+
+                        <p>
+                            <strong>Fecha:</strong>
+                            <span id="fechaActual">Cargando...</span>
+                        </p>
+
+                        <p>
+                            <strong>Hora:</strong>
+                            <span id="horaActual">Cargando...</span>
+                        </p>
+
+                        <button class="btn btn-dark" onclick="actualizarClima()">
+                            <i class="fa-solid fa-cloud-sun"></i>
+                            Consultar clima
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="dashboard-card h-100">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="mini-icon">
+                                <i class="fa-solid fa-temperature-half"></i>
+                            </div>
+                            <div>
+                                <h3 class="mb-0">Clima</h3>
+                                <small>Información meteorológica</small>
+                            </div>
+                        </div>
+
+                        <div id="climaResultado" class="clima-result">
+                            Presiona el botón para consultar.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- RIESGO -->
+    <section id="riesgo" class="section-dark section-padding">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <span class="section-tag">EVALUACIÓN</span>
+                <h2>Evaluación educativa del riesgo</h2>
+                <p class="section-description">
+                    Responde las preguntas y obtén una clasificación orientativa.
+                    No reemplaza información oficial ni sistemas de alerta.
+                </p>
+            </div>
+
+            <div class="risk-box">
+
+                <div class="question">
+                    <label for="pregunta1">
+                        <i class="fa-solid fa-earth-americas"></i>
+                        ¿Existe una amenaza natural en tu zona?
+                    </label>
+                    <select id="pregunta1" class="form-select">
+                        <option value="0">No lo sé</option>
+                        <option value="1">Sí</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <label for="pregunta2">
+                        <i class="fa-solid fa-bell"></i>
+                        ¿Existe una alerta o aviso oficial?
+                    </label>
+                    <select id="pregunta2" class="form-select">
+                        <option value="0">No</option>
+                        <option value="2">Sí</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <label for="pregunta3">
+                        <i class="fa-solid fa-kit-medical"></i>
+                        ¿Tu familia tiene un plan de emergencia?
+                    </label>
+                    <select id="pregunta3" class="form-select">
+                        <option value="0">Sí</option>
+                        <option value="1">No</option>
+                    </select>
+                </div>
+
+                <button class="btn btn-warning btn-lg w-100 mt-3 fw-bold"
+                        onclick="analizarRiesgo()">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    Analizar riesgo
+                </button>
+
+                <div id="resultadoRiesgo" class="risk-result mt-4">
+                    Completa la evaluación.
+                </div>
+
+                <div class="semaforo mt-4">
+                    <div id="luzVerde" class="luz"></div>
+                    <div id="luzAmarilla" class="luz"></div>
+                    <div id="luzRoja" class="luz"></div>
+                    <div id="luzNegra" class="luz"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- RECOMENDACIONES -->
+    <section class="section-padding">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <span class="section-tag">SEGURIDAD</span>
+                <h2>Kit de emergencia</h2>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="kit-card">
+                        <i class="fa-solid fa-bottle-water"></i>
+                        <h3>Agua</h3>
+                        <p>Considera agua suficiente para una emergencia.</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="kit-card">
+                        <i class="fa-solid fa-flashlight"></i>
+                        <h3>Linterna</h3>
+                        <p>Útil si ocurre un corte de electricidad.</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="kit-card">
+                        <i class="fa-solid fa-kit-medical"></i>
+                        <h3>Botiquín</h3>
+                        <p>Incluye elementos básicos de primeros auxilios.</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="kit-card">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <h3>Comunicación</h3>
+                        <p>Mantén un teléfono cargado para emergencias.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- EMERGENCIAS -->
+    <section id="emergencias" class="section-dark section-padding">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <span class="section-tag">AYUDA</span>
+                <h2>Números de emergencia en Chile</h2>
+                <p class="section-description">
+                    Utiliza los números según la situación. Ante una emergencia
+                    real, sigue siempre las instrucciones de las autoridades.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="emergency-card">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h3>133</h3>
+                        <p>Carabineros de Chile</p>
+                        <a href="https://www.carabineros.cl/" target="_blank"
+                           class="btn btn-outline-light">
+                            Sitio oficial
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="emergency-card">
+                        <i class="fa-solid fa-truck-medical"></i>
+                        <h3>131</h3>
+                        <p>SAMU / Ambulancias</p>
+                        <a href="https://www.samu.cl/" target="_blank"
+                           class="btn btn-outline-light">
+                            Información
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="emergency-card">
+                        <i class="fa-solid fa-fire-extinguisher"></i>
+                        <h3>132</h3>
+                        <p>Bomberos</p>
+                        <a href="https://www.bomberos.cl/" target="_blank"
+                           class="btn btn-outline-light">
+                            Sitio oficial
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="official-box mt-5">
+                <i class="fa-solid fa-circle-info"></i>
+                <div>
+                    <strong>Fuente de información:</strong>
+                    consulta también las instrucciones de
+                    <a href="https://www.senapred.cl/" target="_blank">
+                        SENAPRED
+                    </a>
+                    para conocer recomendaciones y alertas oficiales.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- OBJETIVO -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="objective-box">
+                <span class="section-tag">NUESTRO OBJETIVO</span>
+                <h2>Prevenir antes de reaccionar</h2>
+                <p>
+                    Nuestro objetivo es desarrollar una herramienta web
+                    educativa que ayude a las personas a comprender los
+                    riesgos asociados a los desastres naturales y a conocer
+                    medidas básicas de prevención, preparación y respuesta.
+                </p>
+
+                <p class="mb-0">
+                    <strong>Integrantes:</strong>
+                    Jorge Salazar, Martin Saez, Benjamín Soto,
+                    Ismael Duarte y Diego Zenteno.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container text-center">
+            <p class="mb-1">
+                <i class="fa-solid fa-shield-heart"></i>
+                Sistema de Prevención frente a Desastres Naturales 2.0
+            </p>
+            <small>Proyecto educativo - Feria Científica</small>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Nuestro JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
